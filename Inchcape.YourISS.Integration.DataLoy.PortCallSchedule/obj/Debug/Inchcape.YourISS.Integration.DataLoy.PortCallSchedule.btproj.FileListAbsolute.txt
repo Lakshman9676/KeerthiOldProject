@@ -1,0 +1,6 @@
+D:\ShareIt\4-2\company\Sopra Steria\Biztalk_Tesco\Inchcape.YourISS.Integration\Inchcape.YourISS.Integration.DataLoy.PortCallSchedule\bin\Debug\Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.dll
+D:\ShareIt\4-2\company\Sopra Steria\Biztalk_Tesco\Inchcape.YourISS.Integration\Inchcape.YourISS.Integration.DataLoy.PortCallSchedule\bin\Debug\Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.pdb
+D:\ShareIt\4-2\company\Sopra Steria\Biztalk_Tesco\Inchcape.YourISS.Integration\Inchcape.YourISS.Integration.DataLoy.PortCallSchedule\bin\Debug\Inchcape.YourISS.Integration.DataLoy.Schemas.dll
+D:\ShareIt\4-2\company\Sopra Steria\Biztalk_Tesco\Inchcape.YourISS.Integration\Inchcape.YourISS.Integration.DataLoy.PortCallSchedule\bin\Debug\Inchcape.YourISS.Integration.PipeLineComponent.dll
+D:\ShareIt\4-2\company\Sopra Steria\Biztalk_Tesco\Inchcape.YourISS.Integration\Inchcape.YourISS.Integration.DataLoy.PortCallSchedule\obj\Debug\Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.dll
+D:\ShareIt\4-2\company\Sopra Steria\Biztalk_Tesco\Inchcape.YourISS.Integration\Inchcape.YourISS.Integration.DataLoy.PortCallSchedule\obj\Debug\Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.pdb

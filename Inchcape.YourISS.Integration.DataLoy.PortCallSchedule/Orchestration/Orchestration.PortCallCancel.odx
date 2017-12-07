@@ -1,0 +1,735 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="269b6ad8-be05-4365-859d-9e874a8f1a63" LowerBound="1.1" HigherBound="192.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="a15bc048-5f36-4b1f-a46d-b23f72df09fe" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ReceiveDataloyPortcallCancelPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="5356ac01-6c99-4c17-9b4e-7a47dfdb72b1" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReceiveDataloyPortcallCancelPortOperation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="d86459c5-4365-42dd-8363-3f1a9ff4cdad" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.24">
+                    <om:Property Name="Ref" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.StartSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="7143f07c-e3c3-42b8-81f8-dca468021fc6" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="MultiplePortcallCancelDataloyWCFPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="f4163540-4b6d-44b7-8a73-ecb19042a55a" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MultiplePortcallCancelDataloyWCFPortOperation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="6144bb87-7f7f-4ec5-9afd-e244c40036e1" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.24">
+                    <om:Property Name="Ref" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.StartSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="299552a8-8261-452b-b9d3-2b68c09d75ac" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="15.26" HigherBound="15.52">
+                    <om:Property Name="Ref" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.DataLoyMultipleInputSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="f5fb8751-da20-45e9-b74c-3988c632381c" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="MultiplePortCallsCancelDataloyBackupPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="62273883-3b58-45c1-b3a5-af555bf44821" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MultiplePortCallsCancelDataloyBackupPortOperation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="5d2ae0a2-d425-4632-9103-436cfbe3e00d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.39">
+                    <om:Property Name="Ref" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.DataLoyMultipleInputSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="822136ca-3274-4b7a-a2dd-4c43acd9655f" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SinglePortcallCancelDataloyWCFPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="c95c2dfe-13f6-4633-8868-7107246407d7" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SinglePortcallCancelDataloyWCFPortOperation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="f653aba6-a061-4ccd-82ea-48c338140eb1" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.28">
+                    <om:Property Name="Ref" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.DataLoyPortCall" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="b30774a8-6967-4534-9947-65eb426af5ce" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="29.30" HigherBound="29.94">
+                    <om:Property Name="Ref" Value="Inchcape.YourISS.Integration.DataLoy.Schemas.Schema.DataLoyInput" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="4d268a80-a98f-4770-8b38-ed32d828fd73" ParentLink="Module_PortType" LowerBound="32.1" HigherBound="39.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SinglePortCallCancelDataloyBackupPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="55d59aeb-e6a8-46cc-89a1-f36e1fd0be0e" ParentLink="PortType_OperationDeclaration" LowerBound="34.1" HigherBound="38.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SinglePortCallCancelDataloyBackupPortOperation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="28619edc-b669-498d-9712-7421262fc09c" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="36.13" HigherBound="36.77">
+                    <om:Property Name="Ref" Value="Inchcape.YourISS.Integration.DataLoy.Schemas.Schema.DataLoyInput" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="a08e4545-14b9-4ea2-a25b-6686616f42a7" ParentLink="Module_PortType" LowerBound="39.1" HigherBound="46.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="AddDataloyPortcallCancelToDBBackupPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="b990fd84-2447-42ef-820c-4bb9da8d55b0" ParentLink="PortType_OperationDeclaration" LowerBound="41.1" HigherBound="45.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="AddDataloyPortcallCancelToDBBackupPortOperation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="8dcb4d59-13d7-48bf-a86f-946e8e1480dc" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="43.13" HigherBound="43.63">
+                    <om:Property Name="Ref" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.TypedProcedure_dbo.spu_insert_Message_data_dataloy" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="80e9e987-612a-4398-bdea-31ae629c0ec8" ParentLink="Module_PortType" LowerBound="46.1" HigherBound="53.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="AddDataloyPortcallCancelToDBPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="8378d944-d6d6-4c20-90a2-f1926ed264df" ParentLink="PortType_OperationDeclaration" LowerBound="48.1" HigherBound="52.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="AddDataloyPortcallCancelToDBPortOperation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="2b167b0d-beb6-441f-91f3-c3b888846e39" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="50.13" HigherBound="50.63">
+                    <om:Property Name="Ref" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.TypedProcedure_dbo.spu_insert_Message_data_dataloy" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="26321d9b-4480-481c-9c12-ec4db1e3b985" ParentLink="Module_ServiceDeclaration" LowerBound="53.1" HigherBound="191.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortCallCancelOrchestration" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="638bbcef-5454-4b12-bdc2-23db5bf6a2b1" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="75.1" HigherBound="76.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortCallsCountVariable" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="9b022335-0f96-4b82-aa19-e253f437405a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="76.1" HigherBound="77.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortCallURLVariable" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="a2114a94-8093-4df6-b192-dee5704ac71f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="77.1" HigherBound="78.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CurrentVariable" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="02514fa8-b9da-46d3-8afe-2d8ee2f8953d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="78.1" HigherBound="79.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="StringCurrentVariable" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="553a5992-1935-48bb-9631-621d598c3f3c" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="79.1" HigherBound="80.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="XmlDocVariable" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="5deddcfb-fb15-4fa3-aa5d-d4f267c758a3" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="80.1" HigherBound="81.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortCallNumberVariable" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="972414e4-e1f1-4a8b-8348-9fdc29d8bd2a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="81.1" HigherBound="82.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TempVariable" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="9673ede8-9791-4947-8192-879758e713ca" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="70.1" HigherBound="71.1">
+                <om:Property Name="Type" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.StartSchema" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Start" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="1df6f6f7-4660-4766-94d1-c256da99e523" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="71.1" HigherBound="72.1">
+                <om:Property Name="Type" Value="Inchcape.YourISS.Integration.DataLoy.Schemas.Schema.DataLoyInput" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DataloyInbound" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="2ca67d0e-595d-4a39-b649-c25ce09126a4" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="72.1" HigherBound="73.1">
+                <om:Property Name="Type" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.DataLoyMultipleInputSchema" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DataloyMultipleInbound" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="4196f5d6-e8c3-47ab-82a8-2e8bbe929181" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="73.1" HigherBound="74.1">
+                <om:Property Name="Type" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.DataLoyPortCall" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DataloyPortcall" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="1e93b59f-1885-4c89-a00b-ce08a75a80b1" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="74.1" HigherBound="75.1">
+                <om:Property Name="Type" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.TypedProcedure_dbo.spu_insert_Message_data_dataloy" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DataloyInsertDB" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="a8bc1d04-a28d-431a-961f-412192fd8da9" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="a788796e-760a-4182-8ecc-6c14d9574878" ParentLink="ServiceBody_Statement" LowerBound="84.1" HigherBound="91.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="ReceiveDataloyPortcallCancelPort" />
+                    <om:Property Name="MessageName" Value="Start" />
+                    <om:Property Name="OperationName" Value="ReceiveDataloyPortcallCancelPortOperation" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ReceiveTimer" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="9b9962c7-e406-4e46-ad60-2f4d3d0014d2" ParentLink="ServiceBody_Statement" LowerBound="91.1" HigherBound="93.1">
+                    <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.TrackingComponent.TraceIn ();&#xD;&#xA;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StartLoggingSessionExpression" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="2fb6b0a0-3374-494b-84ba-97ea6686c3c9" ParentLink="ServiceBody_Statement" LowerBound="93.1" HigherBound="189.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="GetOpenPortcallsScope" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="Send" OID="b97a6f50-9886-43f6-8019-79f266ef7db2" ParentLink="ComplexStatement_Statement" LowerBound="98.1" HigherBound="100.1">
+                        <om:Property Name="PortName" Value="MultiplePortcallCancelDataloyWCFPort" />
+                        <om:Property Name="MessageName" Value="Start" />
+                        <om:Property Name="OperationName" Value="MultiplePortcallCancelDataloyWCFPortOperation" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="SendRequestMultiple" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="cc751da9-b163-4188-98ba-a92f587256d4" ParentLink="ComplexStatement_Statement" LowerBound="100.1" HigherBound="102.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="MultiplePortcallCancelDataloyWCFPort" />
+                        <om:Property Name="MessageName" Value="DataloyMultipleInbound" />
+                        <om:Property Name="OperationName" Value="MultiplePortcallCancelDataloyWCFPortOperation" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="RecvResponseMultiple" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Send" OID="a6e71f3e-3ecd-480f-8b7f-986b19624525" ParentLink="ComplexStatement_Statement" LowerBound="102.1" HigherBound="104.1">
+                        <om:Property Name="PortName" Value="MultiplePortCallsCancelDataloyBackupPort" />
+                        <om:Property Name="MessageName" Value="DataloyMultipleInbound" />
+                        <om:Property Name="OperationName" Value="MultiplePortCallsCancelDataloyBackupPortOperation" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="SendBackup" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="a426caa6-f3b4-4946-801b-7cde0e24b346" ParentLink="ComplexStatement_Statement" LowerBound="104.1" HigherBound="112.1">
+                        <om:Property Name="Expression" Value="&#xD;&#xA;PortCallsCountVariable = xpath ( DataloyMultipleInbound , &quot;count(//Portcalls)&quot;   );&#xD;&#xA;//System.Diagnostics.EventLog.WriteEntry(&quot;Application&quot;, PortCallsCountVariable.ToString());&#xD;&#xA;&#xD;&#xA;CurrentVariable = 1;&#xD;&#xA;&#xD;&#xA;Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.TrackingComponent.TraceInfo (&quot;Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.Cancel: PortsCalls Count--&gt;{0}&quot;,PortCallsCountVariable);" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="TotalPortCallsCountExpression" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="While" OID="68136d3f-b0af-4376-8a72-b065cca6f73e" ParentLink="ComplexStatement_Statement" LowerBound="112.1" HigherBound="178.1">
+                        <om:Property Name="Expression" Value="PortCallsCountVariable &gt; 0 " />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="LoopUntilPortCallCount&gt;0" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="ddd0f5f9-7b5d-4532-83aa-26c550506be6" ParentLink="ComplexStatement_Statement" LowerBound="115.1" HigherBound="132.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;StringCurrentVariable = CurrentVariable.ToString ();&#xD;&#xA;&#xD;&#xA;PortCallURLVariable = xpath ( DataloyMultipleInbound ,&quot;string(/*[local-name()='root' and namespace-uri()='http://Inchcape.YourISS.Integration.Schema.Portcall.Dataloy']/*[local-name()='Portcalls' and namespace-uri()=''][&quot; + StringCurrentVariable + &quot;]/*[local-name()='self' and namespace-uri()=''])&quot;);&#xD;&#xA;//System.Diagnostics.EventLog.WriteEntry(&quot;Application&quot;, PortCallURLVariable);&#xD;&#xA;&#xD;&#xA;Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.TrackingComponent.TraceInfo (&quot;Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.Cancel: PortCallURLVariable--&gt;{0}&quot;,PortCallURLVariable);&#xD;&#xA;&#xD;&#xA;PortCallNumberVariable = PortCallURLVariable.Substring(PortCallURLVariable.LastIndexOf('/') + 1,PortCallURLVariable.Length - PortCallURLVariable.LastIndexOf('/') - 1);&#xD;&#xA;//System.Diagnostics.EventLog.WriteEntry(&quot;Application&quot;, PortCallNumberVariable);&#xD;&#xA;&#xD;&#xA;//System.Diagnostics.EventLog.WriteEntry(&quot;Application&quot;, &quot;Test&quot;);&#xD;&#xA;&#xD;&#xA;XmlDocVariable =  xpath ( DataloyMultipleInbound , &quot;//Portcalls[&quot; + StringCurrentVariable  + &quot;]&quot;);&#xD;&#xA;//System.Diagnostics.EventLog.WriteEntry(&quot;Application&quot;, XmlDocVariable.InnerXml.ToString());&#xD;&#xA;Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.TrackingComponent.TraceInfo (&quot;Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.Cancel: Individual Portcall--&gt;{0}&quot;,XmlDocVariable.InnerXml);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SetCurrentVariableExpression" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="a2fb3106-4ed2-4f7e-8bf6-b43f1af8c3b3" ParentLink="ComplexStatement_Statement" LowerBound="132.1" HigherBound="143.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="DataLoyPortCallConstructMessage" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="afc60912-fae5-4dae-a823-378ddacb0b5d" ParentLink="ComplexStatement_Statement" LowerBound="135.1" HigherBound="142.1">
+                                <om:Property Name="Expression" Value="XmlDocVariable =   xpath ( DataloyMultipleInbound , &quot;//Portcalls[&quot; + StringCurrentVariable  + &quot;]&quot; );&#xD;&#xA;&#xD;&#xA;XmlDocVariable.LoadXml (    XmlDocVariable.OuterXml.Replace (&quot;xmlns=\&quot;\&quot;&quot; ,&quot;xmlns='http://Inchcape.YourISS.Integration.Schema.Portcall.Dataloy'&quot;) );&#xD;&#xA;&#xD;&#xA;DataloyPortcall = XmlDocVariable;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="52fbee34-ea9b-4dc6-ac61-2fa9207e6188" ParentLink="Construct_MessageRef" LowerBound="133.35" HigherBound="133.50">
+                                <om:Property Name="Ref" Value="DataloyPortcall" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="486da47c-038d-41e1-b08e-984c4fff8981" ParentLink="ComplexStatement_Statement" LowerBound="143.1" HigherBound="148.1">
+                            <om:Property Name="Expression" Value="XmlDocVariable = DataloyPortcall;&#xD;&#xA;//System.Diagnostics.EventLog.WriteEntry(&quot;Application&quot;, XmlDocVariable.InnerXml.ToString());&#xD;&#xA;&#xD;&#xA;Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.TrackingComponent.TraceInfo (&quot;Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.Cancel: DataLoy Portcall--&gt;{0}&quot;,XmlDocVariable.InnerXml);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="PrintDataLoyPortcallExpression" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="82fe4a8a-4b73-4510-9e51-365f16475fab" ParentLink="ComplexStatement_Statement" LowerBound="148.1" HigherBound="150.1">
+                            <om:Property Name="PortName" Value="SinglePortcallCancelDataloyWCFPort" />
+                            <om:Property Name="MessageName" Value="DataloyPortcall" />
+                            <om:Property Name="OperationName" Value="SinglePortcallCancelDataloyWCFPortOperation" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SendSinglePortCall" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="04ca44f6-042b-4c08-ad23-488dcb8da948" ParentLink="ComplexStatement_Statement" LowerBound="150.1" HigherBound="152.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="SinglePortcallCancelDataloyWCFPort" />
+                            <om:Property Name="MessageName" Value="DataloyInbound" />
+                            <om:Property Name="OperationName" Value="SinglePortcallCancelDataloyWCFPortOperation" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ReceiveSinglePortCall" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="e8dc3892-5aea-4079-bfc3-9a8e4a8a36a5" ParentLink="ComplexStatement_Statement" LowerBound="152.1" HigherBound="154.1">
+                            <om:Property Name="PortName" Value="SinglePortCallCancelDataloyBackupPort" />
+                            <om:Property Name="MessageName" Value="DataloyInbound" />
+                            <om:Property Name="OperationName" Value="SinglePortCallCancelDataloyBackupPortOperation" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SendSingleBackup" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="b6f6a8d4-cdb8-40ed-a730-3f0c5dfa8ba6" ParentLink="ComplexStatement_Statement" LowerBound="154.1" HigherBound="169.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="DataLoyInsertDBConstructMessage" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="bb9dcecf-da74-4e8c-a0ab-a16086946400" ParentLink="ComplexStatement_Statement" LowerBound="157.1" HigherBound="168.1">
+                                <om:Property Name="Expression" Value="TempVariable = &quot;&lt;ns0:spu_insert_Message_data_dataloy xmlns:ns0='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo'&gt;&lt;ns0:Method&gt;&lt;/ns0:Method&gt;&lt;ns0:RequestData&gt;&lt;/ns0:RequestData&gt;&lt;ns0:ReferenceNumber&gt;&lt;/ns0:ReferenceNumber&gt;&lt;/ns0:spu_insert_Message_data_dataloy&gt;&quot;;&#xD;&#xA;XmlDocVariable.LoadXml(TempVariable);&#xD;&#xA;DataloyInsertDB = XmlDocVariable;&#xD;&#xA;XmlDocVariable =   DataloyInbound;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;Application&quot;, XmlDocVariable.OuterXml.ToString());&#xD;&#xA;xpath(DataloyInsertDB, &quot;/*[local-name()='spu_insert_Message_data_dataloy' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='RequestData' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']&quot;) = XmlDocVariable.OuterXml;&#xD;&#xA;xpath(DataloyInsertDB, &quot;/*[local-name()='spu_insert_Message_data_dataloy' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='Method' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']&quot;) = &quot;CAN&quot;;&#xD;&#xA;xpath(DataloyInsertDB, &quot;/*[local-name()='spu_insert_Message_data_dataloy' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='ReferenceNumber' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']&quot;) = PortCallNumberVariable;&#xD;&#xA;XmlDocVariable  = DataloyInsertDB ;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;Application&quot;, XmlDocVariable.OuterXml.ToString());&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="78ab8f4e-08ff-4236-8b18-a0dd8596c81b" ParentLink="Construct_MessageRef" LowerBound="155.35" HigherBound="155.50">
+                                <om:Property Name="Ref" Value="DataloyInsertDB" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="08a53ec4-528b-4ba0-9bcf-f572d060f451" ParentLink="ComplexStatement_Statement" LowerBound="169.1" HigherBound="171.1">
+                            <om:Property Name="PortName" Value="AddDataloyPortcallCancelToDBBackupPort" />
+                            <om:Property Name="MessageName" Value="DataloyInsertDB" />
+                            <om:Property Name="OperationName" Value="AddDataloyPortcallCancelToDBBackupPortOperation" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SendPortCallToDBBackup" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="e66ab715-d721-475b-b68f-0970ab44126a" ParentLink="ComplexStatement_Statement" LowerBound="171.1" HigherBound="173.1">
+                            <om:Property Name="PortName" Value="AddDataloyPortcallCancelToDBPort" />
+                            <om:Property Name="MessageName" Value="DataloyInsertDB" />
+                            <om:Property Name="OperationName" Value="AddDataloyPortcallCancelToDBPortOperation" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SendPortCallToDB" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="486c625d-5a51-48d7-82c9-5a3192e0d1e2" ParentLink="ComplexStatement_Statement" LowerBound="173.1" HigherBound="177.1">
+                            <om:Property Name="Expression" Value="CurrentVariable = CurrentVariable + 1;&#xD;&#xA;PortCallsCountVariable = PortCallsCountVariable - 1;&#xD;&#xA;StringCurrentVariable = CurrentVariable.ToString();" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SetLoopVaribaleExpression" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="4ceeb1f1-1e88-423f-97d9-cb47c5ecff4f" ParentLink="Scope_Catch" LowerBound="181.1" HigherBound="187.1">
+                        <om:Property Name="ExceptionName" Value="exp" />
+                        <om:Property Name="ExceptionType" Value="System.SystemException" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="15513d39-b77c-4959-a845-9d18fdfa3772" ParentLink="Catch_Statement" LowerBound="184.1" HigherBound="186.1">
+                            <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.TrackingComponent.TraceInfo (&quot;Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.Cancel: Error--&gt;{0}&quot;,exp.Message );" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="LogExceptionExpression" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="26f82daa-db15-4e16-a2a4-b8c2e87ef1c6" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="56.1" HigherBound="58.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="2" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.ReceiveDataloyPortcallCancelPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReceiveDataloyPortcallCancelPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="3aa2be5b-4737-488b-ba59-1ec31ae0f9d5" ParentLink="PortDeclaration_CLRAttribute" LowerBound="56.1" HigherBound="57.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="64f42094-9b8f-43a8-a82d-51f6e510d963" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="58.1" HigherBound="60.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="18" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.MultiplePortcallCancelDataloyWCFPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MultiplePortcallCancelDataloyWCFPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="ff301948-c669-4ed1-89d6-311c3dfb8ffa" ParentLink="PortDeclaration_CLRAttribute" LowerBound="58.1" HigherBound="59.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="64b31014-9fe8-417c-a1a0-6e9170cffcd2" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="60.1" HigherBound="62.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="12" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.MultiplePortCallsCancelDataloyBackupPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MultiplePortCallsCancelDataloyBackupPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="fe31ec53-1990-433b-9fe1-895f89d315e9" ParentLink="PortDeclaration_CLRAttribute" LowerBound="60.1" HigherBound="61.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="468ba97a-4584-4250-a265-d0b200d1e777" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="62.1" HigherBound="64.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="56" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.SinglePortcallCancelDataloyWCFPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SinglePortcallCancelDataloyWCFPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="d75ef51b-cc27-497e-9399-5b74546cbe7d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="62.1" HigherBound="63.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="8c8b0f0d-92bc-4e2c-97ec-01c7d2e2e595" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="64.1" HigherBound="66.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="50" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.SinglePortCallCancelDataloyBackupPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SinglePortCallCancelDataloyBackupPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="05747b7a-108b-4190-af68-94e165b9443d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="64.1" HigherBound="65.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="6bd3dd51-62cd-44f4-b7cf-4e9906084b24" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="66.1" HigherBound="68.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="74" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.AddDataloyPortcallCancelToDBBackupPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="AddDataloyPortcallCancelToDBBackupPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="a1d00ac9-ce0e-4d51-a8c5-475946348162" ParentLink="PortDeclaration_CLRAttribute" LowerBound="66.1" HigherBound="67.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="1385b253-1b10-4d12-b87b-d135200b80de" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="68.1" HigherBound="70.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="82" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.AddDataloyPortcallCancelToDBPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="AddDataloyPortcallCancelToDBPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="918d93e5-1940-4545-85c5-dfa4ff93cd08" ParentLink="PortDeclaration_CLRAttribute" LowerBound="68.1" HigherBound="69.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Inchcape.YourISS.Integration.DataLoy.PortCallSchedule
+{
+    internal porttype ReceiveDataloyPortcallCancelPortType
+    {
+        oneway ReceiveDataloyPortcallCancelPortOperation
+        {
+            StartSchema
+        };
+    };
+    internal porttype MultiplePortcallCancelDataloyWCFPortType
+    {
+        requestresponse MultiplePortcallCancelDataloyWCFPortOperation
+        {
+            StartSchema, DataLoyMultipleInputSchema
+        };
+    };
+    internal porttype MultiplePortCallsCancelDataloyBackupPortType
+    {
+        oneway MultiplePortCallsCancelDataloyBackupPortOperation
+        {
+            DataLoyMultipleInputSchema
+        };
+    };
+    internal porttype SinglePortcallCancelDataloyWCFPortType
+    {
+        requestresponse SinglePortcallCancelDataloyWCFPortOperation
+        {
+            DataLoyPortCall, Inchcape.YourISS.Integration.DataLoy.Schemas.Schema.DataLoyInput
+        };
+    };
+    internal porttype SinglePortCallCancelDataloyBackupPortType
+    {
+        oneway SinglePortCallCancelDataloyBackupPortOperation
+        {
+            Inchcape.YourISS.Integration.DataLoy.Schemas.Schema.DataLoyInput
+        };
+    };
+    internal porttype AddDataloyPortcallCancelToDBBackupPortType
+    {
+        oneway AddDataloyPortcallCancelToDBBackupPortOperation
+        {
+            TypedProcedure_dbo.spu_insert_Message_data_dataloy
+        };
+    };
+    internal porttype AddDataloyPortcallCancelToDBPortType
+    {
+        oneway AddDataloyPortcallCancelToDBPortOperation
+        {
+            TypedProcedure_dbo.spu_insert_Message_data_dataloy
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service PortCallCancelOrchestration
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements ReceiveDataloyPortcallCancelPortType ReceiveDataloyPortcallCancelPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses MultiplePortcallCancelDataloyWCFPortType MultiplePortcallCancelDataloyWCFPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses MultiplePortCallsCancelDataloyBackupPortType MultiplePortCallsCancelDataloyBackupPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SinglePortcallCancelDataloyWCFPortType SinglePortcallCancelDataloyWCFPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SinglePortCallCancelDataloyBackupPortType SinglePortCallCancelDataloyBackupPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses AddDataloyPortcallCancelToDBBackupPortType AddDataloyPortcallCancelToDBBackupPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses AddDataloyPortcallCancelToDBPortType AddDataloyPortcallCancelToDBPort;
+        message StartSchema Start;
+        message Inchcape.YourISS.Integration.DataLoy.Schemas.Schema.DataLoyInput DataloyInbound;
+        message DataLoyMultipleInputSchema DataloyMultipleInbound;
+        message DataLoyPortCall DataloyPortcall;
+        message TypedProcedure_dbo.spu_insert_Message_data_dataloy DataloyInsertDB;
+        System.Int32 PortCallsCountVariable;
+        System.String PortCallURLVariable;
+        System.Int32 CurrentVariable;
+        System.String StringCurrentVariable;
+        System.Xml.XmlDocument XmlDocVariable;
+        System.String PortCallNumberVariable;
+        System.String TempVariable;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a788796e-760a-4182-8ecc-6c14d9574878")]
+            activate receive (ReceiveDataloyPortcallCancelPort.ReceiveDataloyPortcallCancelPortOperation, Start);
+            PortCallURLVariable = "";
+            StringCurrentVariable = "";
+            XmlDocVariable = new System.Xml.XmlDocument();
+            PortCallNumberVariable = "";
+            TempVariable = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9b9962c7-e406-4e46-ad60-2f4d3d0014d2")]
+            Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.TrackingComponent.TraceIn ();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("2fb6b0a0-3374-494b-84ba-97ea6686c3c9")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("b97a6f50-9886-43f6-8019-79f266ef7db2")]
+                    send (MultiplePortcallCancelDataloyWCFPort.MultiplePortcallCancelDataloyWCFPortOperation, Start);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("cc751da9-b163-4188-98ba-a92f587256d4")]
+                    receive (MultiplePortcallCancelDataloyWCFPort.MultiplePortcallCancelDataloyWCFPortOperation, DataloyMultipleInbound);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("a6e71f3e-3ecd-480f-8b7f-986b19624525")]
+                    send (MultiplePortCallsCancelDataloyBackupPort.MultiplePortCallsCancelDataloyBackupPortOperation, DataloyMultipleInbound);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("a426caa6-f3b4-4946-801b-7cde0e24b346")]
+                    
+                    PortCallsCountVariable = xpath ( DataloyMultipleInbound , "count(//Portcalls)"   );
+                    //System.Diagnostics.EventLog.WriteEntry("Application", PortCallsCountVariable.ToString());
+                    
+                    CurrentVariable = 1;
+                    
+                    Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.TrackingComponent.TraceInfo ("Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.Cancel: PortsCalls Count-->{0}",PortCallsCountVariable);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("68136d3f-b0af-4376-8a72-b065cca6f73e")]
+                    while (PortCallsCountVariable > 0 )
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("ddd0f5f9-7b5d-4532-83aa-26c550506be6")]
+                        
+                        StringCurrentVariable = CurrentVariable.ToString ();
+                        
+                        PortCallURLVariable = xpath ( DataloyMultipleInbound ,"string(/*[local-name()='root' and namespace-uri()='http://Inchcape.YourISS.Integration.Schema.Portcall.Dataloy']/*[local-name()='Portcalls' and namespace-uri()=''][" + StringCurrentVariable + "]/*[local-name()='self' and namespace-uri()=''])");
+                        //System.Diagnostics.EventLog.WriteEntry("Application", PortCallURLVariable);
+                        
+                        Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.TrackingComponent.TraceInfo ("Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.Cancel: PortCallURLVariable-->{0}",PortCallURLVariable);
+                        
+                        PortCallNumberVariable = PortCallURLVariable.Substring(PortCallURLVariable.LastIndexOf('/') + 1,PortCallURLVariable.Length - PortCallURLVariable.LastIndexOf('/') - 1);
+                        //System.Diagnostics.EventLog.WriteEntry("Application", PortCallNumberVariable);
+                        
+                        //System.Diagnostics.EventLog.WriteEntry("Application", "Test");
+                        
+                        XmlDocVariable =  xpath ( DataloyMultipleInbound , "//Portcalls[" + StringCurrentVariable  + "]");
+                        //System.Diagnostics.EventLog.WriteEntry("Application", XmlDocVariable.InnerXml.ToString());
+                        Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.TrackingComponent.TraceInfo ("Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.Cancel: Individual Portcall-->{0}",XmlDocVariable.InnerXml);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("a2fb3106-4ed2-4f7e-8bf6-b43f1af8c3b3")]
+                        construct DataloyPortcall
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("afc60912-fae5-4dae-a823-378ddacb0b5d")]
+                            XmlDocVariable =   xpath ( DataloyMultipleInbound , "//Portcalls[" + StringCurrentVariable  + "]" );
+                            
+                            XmlDocVariable.LoadXml (    XmlDocVariable.OuterXml.Replace ("xmlns=\"\"" ,"xmlns='http://Inchcape.YourISS.Integration.Schema.Portcall.Dataloy'") );
+                            
+                            DataloyPortcall = XmlDocVariable;
+                            
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("486da47c-038d-41e1-b08e-984c4fff8981")]
+                        XmlDocVariable = DataloyPortcall;
+                        //System.Diagnostics.EventLog.WriteEntry("Application", XmlDocVariable.InnerXml.ToString());
+                        
+                        Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.TrackingComponent.TraceInfo ("Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.Cancel: DataLoy Portcall-->{0}",XmlDocVariable.InnerXml);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("82fe4a8a-4b73-4510-9e51-365f16475fab")]
+                        send (SinglePortcallCancelDataloyWCFPort.SinglePortcallCancelDataloyWCFPortOperation, DataloyPortcall);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("04ca44f6-042b-4c08-ad23-488dcb8da948")]
+                        receive (SinglePortcallCancelDataloyWCFPort.SinglePortcallCancelDataloyWCFPortOperation, DataloyInbound);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e8dc3892-5aea-4079-bfc3-9a8e4a8a36a5")]
+                        send (SinglePortCallCancelDataloyBackupPort.SinglePortCallCancelDataloyBackupPortOperation, DataloyInbound);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b6f6a8d4-cdb8-40ed-a730-3f0c5dfa8ba6")]
+                        construct DataloyInsertDB
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("bb9dcecf-da74-4e8c-a0ab-a16086946400")]
+                            TempVariable = "<ns0:spu_insert_Message_data_dataloy xmlns:ns0='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo'><ns0:Method></ns0:Method><ns0:RequestData></ns0:RequestData><ns0:ReferenceNumber></ns0:ReferenceNumber></ns0:spu_insert_Message_data_dataloy>";
+                            XmlDocVariable.LoadXml(TempVariable);
+                            DataloyInsertDB = XmlDocVariable;
+                            XmlDocVariable =   DataloyInbound;
+                            System.Diagnostics.EventLog.WriteEntry("Application", XmlDocVariable.OuterXml.ToString());
+                            xpath(DataloyInsertDB, "/*[local-name()='spu_insert_Message_data_dataloy' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='RequestData' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']") = XmlDocVariable.OuterXml;
+                            xpath(DataloyInsertDB, "/*[local-name()='spu_insert_Message_data_dataloy' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='Method' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']") = "CAN";
+                            xpath(DataloyInsertDB, "/*[local-name()='spu_insert_Message_data_dataloy' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']/*[local-name()='ReferenceNumber' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo']") = PortCallNumberVariable;
+                            XmlDocVariable  = DataloyInsertDB ;
+                            System.Diagnostics.EventLog.WriteEntry("Application", XmlDocVariable.OuterXml.ToString());
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("08a53ec4-528b-4ba0-9bcf-f572d060f451")]
+                        send (AddDataloyPortcallCancelToDBBackupPort.AddDataloyPortcallCancelToDBBackupPortOperation, DataloyInsertDB);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e66ab715-d721-475b-b68f-0970ab44126a")]
+                        send (AddDataloyPortcallCancelToDBPort.AddDataloyPortcallCancelToDBPortOperation, DataloyInsertDB);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("486c625d-5a51-48d7-82c9-5a3192e0d1e2")]
+                        CurrentVariable = CurrentVariable + 1;
+                        PortCallsCountVariable = PortCallsCountVariable - 1;
+                        StringCurrentVariable = CurrentVariable.ToString();
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("4ceeb1f1-1e88-423f-97d9-cb47c5ecff4f")]
+                    catch (System.SystemException exp)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("15513d39-b77c-4959-a845-9d18fdfa3772")]
+                        Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.TrackingComponent.TraceInfo ("Inchcape.YourISS.Integration.DataLoy.PortCallSchedule.Cancel: Error-->{0}",exp.Message );
+                    }
+                }
+            }
+        }
+    }
+}
+
